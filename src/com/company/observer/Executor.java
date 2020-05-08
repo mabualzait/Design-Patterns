@@ -1,6 +1,6 @@
 package com.company.observer;
 
-public class Exec {
+public class Executor {
     public static void main(String[] args) {
         Course java = new Course("Java Course");
 
