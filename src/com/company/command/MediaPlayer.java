@@ -1,10 +1,11 @@
 package com.company.command;
 
 public class MediaPlayer {
-    public void turnOn(){
+    public void turnOn() {
         System.out.println("MediaPlayer is turning ON");
     }
-    public void turnOff(){
+
+    public void turnOff() {
         System.out.println("MediaPlayer is turning OFF");
     }
 }

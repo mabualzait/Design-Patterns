@@ -1,6 +1,8 @@
 package com.company.command;
 
 public class Executor {
+    public static final int TV_SLOT = 0;
+
     public static void main(String[] args) {
         RemoteControl remoteControl = new RemoteControl();
 
@@ -8,9 +10,9 @@ public class Executor {
         TurnOnTelevision turnOnTelevision = new TurnOnTelevision(tv);
         TurnOffTelevision turnOffTelevision = new TurnOffTelevision(tv);
 
-        remoteControl.addCommand(0, turnOnTelevision, turnOffTelevision);
+        remoteControl.addCommand(TV_SLOT, turnOnTelevision, turnOffTelevision);
 
-        remoteControl.onButtonPressed(0);
-        remoteControl.offButtonPressed(0);
+        remoteControl.onButtonPressed(TV_SLOT);
+        remoteControl.offButtonPressed(TV_SLOT);
     }
 }

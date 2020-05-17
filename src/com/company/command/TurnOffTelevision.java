@@ -1,6 +1,6 @@
 package com.company.command;
 
-public class TurnOffTelevision implements Command{
+public class TurnOffTelevision implements Command {
     private Television tv;
 
     public TurnOffTelevision(Television tv) {
@@ -12,8 +12,4 @@ public class TurnOffTelevision implements Command{
         this.tv.turnOff();
     }
 
-    @Override
-    public void undo() {
-        this.tv.turnOn();
-    }
 }

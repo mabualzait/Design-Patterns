@@ -12,8 +12,4 @@ public class TurnOnTelevision implements Command {
         this.tv.turnOn();
     }
 
-    @Override
-    public void undo() {
-        this.tv.turnOff();
-    }
 }
